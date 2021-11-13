@@ -1,0 +1,37 @@
+/* 
+    Put your custom SCSS here! 
+    This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
+*/
+
+body 
+{
+    background-color: #fff5ee;
+}
+
+.title
+{
+    color: #ffffff;
+}
+
+.card-body
+{
+    box-shadow: 1px 1px #cccccc;
+    border-radius: 5px;
+}
+
+.navbar
+{
+    padding: 0px;
+}
+
+.item-tag
+{
+    color: #17a2b8;
+    border: 0px;
+    padding: 0px;
+}
+
+.page-link
+{
+    color: #17a2b8;
+}
