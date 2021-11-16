@@ -7,6 +7,7 @@ export default class GithubAPi {
   
     get(name, callback) {
       if (name.indexOf(".json") !== -1) {
+        console.log('https://raw.githubusercontent.com/'+this.username+'/'+this.repo+'/'+this.branch+'/'+name);
           fetch('https://raw.githubusercontent.com/'+this.username+'/'+this.repo+'/'+this.branch+'/'+name)
           .then(response => response.json())
           .then((data) => {

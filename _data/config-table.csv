@@ -3,4 +3,6 @@ site,Site
 start,Start
 end,End
 description,Description
-subject,Subjects
+location,Location
+bibliography, Bibliography
+tags, Tags

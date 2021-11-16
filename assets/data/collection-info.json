@@ -7,13 +7,10 @@
 {%- assign formats = site.data[site.metadata] | map: 'format' -%}
 {%- assign formats_uniq = formats | uniq -%}
 { 
-    "title": "{{ site.title }}",
+    "site": "{{ site.site }}",
     "url": "{{ '/' | absolute_url }}",
     "image": "{% include image/featured-image.html %}", 
     "description": "{{ site.description }}",
-    "publisher": { 
-        "name": "{{ site.author }}"
-    },
     "date_start": "{{ date-range | first }}",
     "date_end": "{{ date-range | last }}",
     "objects": {

@@ -2,5 +2,5 @@ field,display_name,btn,hidden,sort_name
 start,Start,,,Start date
 end,End,,,End date
 site,Site,,,Site
-subject,,true
+subject,,true,,
 location,,true

@@ -1,5 +1,4 @@
 display_name,stub,dropdown_parent
-🔎︎ Browse,/browse.html
-🗺️ Map,/map.html
-💾 Data,/data.html
-❓ About,/about.html
+Browse,/browse.html
+Map,/map.html
+About,/about.html

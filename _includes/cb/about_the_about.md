@@ -8,73 +8,50 @@
 {% capture audiosampleid %}{{audiosample.objectid | default: "https://www.lib.uidaho.edu/digital/mp3s/Clouds.mp3"}}{% endcapture %}
 
 
-## About the About Page
+## Contribute
 
-We want to make About pages exciting, and easy to build. 
+Templum and its accompanying dataset is all open-source, meaning that it is all completely free and accessible to anyone. Being hosted on GitHub anyone can ‘fork’ a copy of the project, and make a change to their local version and commit the change to a ‘Pull Request’ (PR). The PR is then reviewed, and if approved is merged into the ‘master’ project.
 
-The CollectionBuilder about page features a narrowed column with its own (optional) menu, featured content, and some technical information. 
+## How to
 
-To build one, a user writes in [Markdown](https://guides.github.com/features/mastering-markdown/) and includes  content from the site, as well as typical [Bootstrap](https://getbootstrap.com/) features like cards and modals, using code snippets like those detailed below. 
-We hope this makes it easier for site builders to develop the collection AND add interesting and engaging contextual information. 
+An excellent practical guide on how to make a contribution to an open-source project is available [here](https://github.com/firstcontributions/first-contributions).
+The Templum dataset is available [here](https://github.com/8BitSensei/RitualHub-Dataset) and the Templum Website [here](https://github.com/8BitSensei/Templum).
 
-Each included file has several options, which are documented in the files themselves and briefly documented below. We've given the content widths of 25% and 50% to save space, but you can feature the entire image or document.
+## Format
 
+Entries into the Templum dataset must be made in the "sites": [] array and keep to the following format:
 
-You can also see a page featuring [a bonanza of feature includes options](https://collectionbuilder.github.io/collectionbuilder-gh/feature_options.html) on our CollectionBuilder-GH demo site. 
+```json
+{"site":"The common name for the site e.g. Maiden Castle",
+"start":-50,
+"end":123,
+"location":"England, Dorset, Dorchester, Maiden Castle Road",
+"description":"An appropriate description, ideally a paragraph or two that sums up the sites significance.",
+"bibliography":[
+"Cleary, S., 2014. The 'end of the gods' in late Roman Britain. Gallia, 71(1).",
+"Sharples, N., Ambers, J., Armour-Chelu, M. et al., 1991. Maiden Castle: Excavations And Field Survey 1985-6. 1st ed. Liverpool: Liverpool University Press, Historic England."
+]}
+```
 
-{% include feature/button.html text="Feature *Includes* Bonanza page" link="https://collectionbuilder.github.io/collectionbuilder-gh/feature_options.html" color="info" size="lg" centered=true %}
+Locations should generally follow the format of Country, County, Townland, nearest road if possible.
+We currently use the Harvard System of referencing, more information on this style can be found [here](https://www.citethisforme.com/harvard-referencing).
 
-### Include Collection Items
+## Useful Tools
 
-#### Include an Image
+Below are some useful tools we use in our workflow, all of which are free:
 
-- Image --> `{% raw %}{% include feature/image.html objectid="demo_001" width="75" %}{% endraw %}`
+1. [Visual Studio Code](https://code.visualstudio.com/) - a lightweight IDE from Microsoft.
 
-{% include feature/image.html objectid=imagesampleid width="75" %}
+2. [GitKraken](https://www.gitkraken.com/) - Git GUI client for Windows, Mac & Linux.
 
+3. [JSTOR](https://www.jstor.org/) - JSTOR is a hugely popular digital library. However, most of the content is behind paywalls or requires organisational credentials, but a good place to start searching.
 
-#### Include a PDF
+4. [Academia](https://www.academia.edu/) - an Academic social-networking site that also acts as a repository for free academic material.
 
-- PDF -- > `{% raw %}{% include feature/pdf.html objectid="demo_002"  width="50" %}{% endraw %}`
+5. Sci-Hub - One of the most important websites you can know about as an amateur scholar, sci-hub provides most paywall blocked articles for free. Do a quick Google for it as its address has to change often.
 
-{% include feature/pdf.html objectid=pdfsampleid width="50" %}
+6. [Z-Library](https://z-lib.org/) - Similar to Sci-Hub, Z-Library is a file sharing site that provides a large corpus of books and articles for free.
 
-#### Include a Video
+7. [LibGen](http://libgen.li/) - LibGen is another academic file sharing site, but tends to not have Archaeology or Humanaties works so we don't use it nearly as often as Sci-Hub or Z-Library.
 
-- Video: `{% raw %}{% include feature/video.html objectid="demo_004" %}{% endraw %}`
-
-
-{% include feature/video.html objectid=videosampleid width="75" %}
-
-
-#### Include an Audio File
-
-- Audio: `{% raw %}{% include feature/audio.html objectid="demo_003" %}{% endraw %}`
-
-{% include feature/audio.html objectid=audiosampleid  %}
-
-### Include [Bootstrap](https://getbootstrap.com/) Features
-
-#### Include a Card
-
-- Card -- > `{% raw %}{% include feature/card.html header="This is a Card" text="The card features an image from the collection as a cap" objectid="demo004" width="25" centered=true %}{% endraw %}`
-
-{% include feature/card.html header="This is a Card" text="The card features an image from the collection as a cap" objectid="demo_001" width="25" centered=true %}
-
-#### Include a Button 
-
-- Buttons -- > `{% raw %}{% include feature/button.html text="Button Link to Somewhere" link="https://collectionbuilder.github.io/" color="success" %}{% endraw %}`
-
-{% include feature/button.html text="Button Link to Somewhere" link="https://collectionbuilder.github.io/" color="success" centered=true %}
-  
-#### Include an Alert
-
-- Alerts -- > `{% raw %}{% include feature/alert.html text="this is an *alert* that 'warns' a user" color="warning" align="center" %}{% endraw %}`
-
-{% include feature/alert.html text="This is an *alert* that 'warns' a user with centrally aligned text." color="warning" align="center"  %}
-
-#### Include a Modal
-
-- Modals -- > `{% raw %}{% include feature/modal.html button="This is a modal using a 'primary' colored button to invite clicking" title="when clicked:" text="A Modal will pop out a box with some more information" color="primary"  %}{% endraw %}`
-
-{% include feature/modal.html button="This is a modal using a 'primary' colored button to invite clicking" title="When clicked:" text="A Modal will pop out a box with some more information" color="primary"  %} 
+8. [Zotero](https://www.zotero.org/) - Zotero is a tool for collating and managing bibliographies.

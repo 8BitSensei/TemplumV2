@@ -2,20 +2,25 @@
 layout: default
 custom-foot: js/item-js.html
 ---
-
+<link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.css' | relative_url }}">
 <div class="container mt-2 mb-4">
     <ul class="breadcrumb h6">
         <li class="breadcrumb-item text-secondary"><a class="text-dark" href="{{ '/browse.html' | relative_url }}">Browse</a></li>
         <li id="bc-title" class="breadcrumb-item active"></li>
     </ul>
-
-    <div class="card">
-        <div class="card-body text-left">
-            <h2 id="item-title"></h2>
-            <div class="mt-3">
-                <div class="col-md-7" id="image-holder"></div>
-                    <div id="item-metadata" class="metadata">
+    <div id="main-row" class="row">
+        <div id="main-col">
+            <div class="card">
+                <div class="card-body text-left">
+                    <div id="title-div" class="title-container">
+                        <h2 id="item-title"></h2>
                     </div>
+                    <div class="mt-3">
+                        <div class="col-md-7" id="image-holder"></div>
+                            <div id="item-metadata" class="metadata">
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

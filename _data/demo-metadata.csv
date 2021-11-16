@@ -1,4 +1,4 @@
-objectid,title,from,to,description,subject,location,latitude,longitude,bibliography
+objectid,site,from,to,description,subject,location,latitude,longitude,bibliography
 demo_001,Ardstraw,575,599,"An early Irish ecclesiastical site, purportedly founded by St.Éogan in the late 6th CE. According to his Vita Éogan studied at Clones and Whithorn, before founding Ardstraw in his later life.",church;,"Ireland, County Tyrone, Strabane",46.725562,-117.009633,
 demo_002,Uley Shrine,-100,599,,pre-roman; roman; post-roman; ,"England, Gloucestershire, Uley",47.66432,-117.428031,"McCarty, M., (2015), Chapter 4.2, Religious dedications, in The Oxford Handbook of Roman Sculpture
 Smith, A., (2008), The Fate of Pagan Temples in South-East Britain, in Ritual Landsacpes of South-East Britain
