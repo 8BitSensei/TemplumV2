@@ -23,6 +23,7 @@ function reloadData()
     }
 
     function imageExists(url) {
+        console.log(url);
         var http = new XMLHttpRequest();
         http.open('HEAD', url, false);
         http.send();
