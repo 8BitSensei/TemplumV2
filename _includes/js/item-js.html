@@ -84,7 +84,7 @@ function reloadData()
             itemImage= undefined;
         }
         
-        var siteImage = window.location.protocol + "//" + window.location.host + "/objects/site_" + record.index + ".jpg";
+        var siteImage = window.location.protocol + "//" + window.location.host + "/TemplumV2/objects/site_" + record.index + ".jpg";
         if(imageExists(siteImage) || (record?.latitude != undefined && record?.longitude != undefined))
         {
             document.getElementById("main-col").classList.add('col-md-8');
